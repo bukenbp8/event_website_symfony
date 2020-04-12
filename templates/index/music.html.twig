@@ -3,6 +3,7 @@
 {% block title %}Music{% endblock %}
 
 {% block body %}
+<div class="row justify-content-around">
     {% if events %}
             {% for event in events %}
                 <div class="card mb-3 col-md-4 p-0">
@@ -48,6 +49,7 @@
         {% else %}
             <p>No events to display</p>
     {% endif %}
+</div>
 {% endblock %}
 
 {# {% block javascripts %}
